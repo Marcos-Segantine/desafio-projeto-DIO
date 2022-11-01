@@ -1,0 +1,30 @@
+
+:root {
+    --background-color-dark: #202020;
+    --text-color-dark: #f1f1f1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+body.theme-dark {
+    background-color: var(--background-color-dark);
+}
+
+body.theme-dark div {
+    color: var(--text-color-dark);
+}
+
+.theme {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
