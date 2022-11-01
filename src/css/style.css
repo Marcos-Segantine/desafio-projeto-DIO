@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+    padding: 5rem;
+}
+
+label {
+    margin-right: .5rem;
+    font-size: 1.5rem;
+}
+
+input {
+    padding: 1rem 2rem;
+    width: 30%;
+    border-radius: 15px;
+    border: none;
+    background-color: #eee;
+}
+
+input:focus {
+    outline: 0;
+}
+
+h1 {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    border-bottom: solid 1px;
+    padding: 1rem 0;
+}
+
+.message {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: .8rem;
+    animation: animationMessage .5s;
+}
+
+@keyframes animationMessage {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
